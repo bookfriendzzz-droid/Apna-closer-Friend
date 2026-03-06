@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Companions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/companions.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2 class="logo">Closer Friend</h2>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="booking.html">Book</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="companions">
+  <h1>Meet Your Friends</h1>
+  <p class="companions-subtitle">
+    Meet friendly people in your city for coffee, walks, events and genuine conversations.
+  </p>
+
+  <!-- Search + Filters -->
+  <div class="companions-filters">
+    <input
+      type="text"
+      id="search-name"
+      class="filter-input"
+      placeholder="Search by name..."
+    >
+
+    <select id="filter-gender" class="filter-select">
+      <option value="">Any gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <select id="filter-age" class="filter-select">
+      <option value="">Any age</option>
+      <option value="18-22">18–22</option>
+      <option value="23-27">23–27</option>
+      <option value="28-35">28–35</option>
+    </select>
+
+    <input
+      type="text"
+      id="filter-location"
+      class="filter-input"
+      placeholder="Location (e.g. Lucknow)"
+    >
+  </div>
+
+  <div class="companions-list">
+
+    <!-- Card 1 -->
+    <article
+      class="companion-card"
+      data-name="ajay devganj"
+      data-gender="male"
+      data-age="27"
+      data-location="lucknow"
+    >
+      <img src="images/person1.jpg" alt="Ajay Devganj" class="companion-img">
+      <div class="companion-info">
+        <h2 class="companion-name">Ajay Devganj</h2>
+        <p class="companion-meta">27 • Male • Lucknow</p>
+        <p class="companion-bio">
+          Friendly software engineer who loves late-night chai, stand‑up comedy and long walks. 
+          I enjoy listening to people, sharing stories, and exploring new cafés around the city.
+        </p>
+        <a href="profile.html?id=rahul" class="btn companion-btn">View Profile</a>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article
+      class="companion-card"
+      data-name="anita singh"
+      data-gender="female"
+      data-age="24"
+      data-location="kanpur"
+    >
+      <img src="images/person2.jpg" alt="Anita" class="companion-img">
+      <div class="companion-info">
+        <h2 class="companion-name">Anita Singh</h2>
+        <p class="companion-meta">24 • Female • Kanpur</p>
+        <p class="companion-bio">
+          Book lover and psychology student, happy to be your safe space to talk. 
+          I enjoy deep conversations, board games, and calm evening meetups in parks or cafés.
+        </p>
+        <a href="profile.html?id=anita" class="btn companion-btn">View Profile</a>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article
+      class="companion-card"
+      data-name="alex sharma"
+      data-gender="female"
+      data-age="26"
+      data-location="delhi"
+    >
+      <img src="images/person3.jpg" alt="person3" class="companion-img">
+      <div class="companion-info">
+        <h2 class="companion-name">Shara Sharma</h2>
+        <p class="companion-meta">26 • Female • Delhi</p>
+        <p class="companion-bio">
+          Traveller and music nerd who loves discovering new places and playlists. 
+          I’m easy‑going, non‑judgemental, and always up for meaningful chats over coffee or long walks.
+        </p>
+        <a href="profile.html?id=alex" class="btn companion-btn">View Profile</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
